@@ -14,6 +14,9 @@
 		B77F15792A81647700C9D2FB /* NotoriousTaskManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F15782A81647700C9D2FB /* NotoriousTaskManagementTests.swift */; };
 		B77F15832A81647700C9D2FB /* NotoriousTaskManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F15822A81647700C9D2FB /* NotoriousTaskManagementUITests.swift */; };
 		B77F15852A81647700C9D2FB /* NotoriousTaskManagementUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F15842A81647700C9D2FB /* NotoriousTaskManagementUITestsLaunchTests.swift */; };
+		B77F15942A81652D00C9D2FB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F15932A81652D00C9D2FB /* Task.swift */; };
+		B77F15972A81657600C9D2FB /* TaskViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F15962A81657600C9D2FB /* TaskViewmodel.swift */; };
+		B77F15992A81665D00C9D2FB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77F15982A81665D00C9D2FB /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		B77F157E2A81647700C9D2FB /* NotoriousTaskManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotoriousTaskManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77F15822A81647700C9D2FB /* NotoriousTaskManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotoriousTaskManagementUITests.swift; sourceTree = "<group>"; };
 		B77F15842A81647700C9D2FB /* NotoriousTaskManagementUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotoriousTaskManagementUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B77F15932A81652D00C9D2FB /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B77F15962A81657600C9D2FB /* TaskViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewmodel.swift; sourceTree = "<group>"; };
+		B77F15982A81665D00C9D2FB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 		B77F15662A81647600C9D2FB /* NotoriousTaskManagement */ = {
 			isa = PBXGroup;
 			children = (
+				B77F15922A81649B00C9D2FB /* Model */,
+				B77F15952A81655500C9D2FB /* ViewModel */,
+				B77F15912A81649400C9D2FB /* View */,
 				B77F15672A81647600C9D2FB /* NotoriousTaskManagementApp.swift */,
 				B77F15692A81647600C9D2FB /* ContentView.swift */,
 				B77F156B2A81647700C9D2FB /* Assets.xcassets */,
@@ -125,6 +134,38 @@
 				B77F15842A81647700C9D2FB /* NotoriousTaskManagementUITestsLaunchTests.swift */,
 			);
 			path = NotoriousTaskManagementUITests;
+			sourceTree = "<group>";
+		};
+		B77F15912A81649400C9D2FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B77F159A2A81666500C9D2FB /* Screens */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B77F15922A81649B00C9D2FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B77F15932A81652D00C9D2FB /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B77F15952A81655500C9D2FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B77F15962A81657600C9D2FB /* TaskViewmodel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B77F159A2A81666500C9D2FB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B77F15982A81665D00C9D2FB /* Home.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B77F156A2A81647600C9D2FB /* ContentView.swift in Sources */,
+				B77F15972A81657600C9D2FB /* TaskViewmodel.swift in Sources */,
+				B77F15992A81665D00C9D2FB /* Home.swift in Sources */,
+				B77F15942A81652D00C9D2FB /* Task.swift in Sources */,
 				B77F15682A81647600C9D2FB /* NotoriousTaskManagementApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
